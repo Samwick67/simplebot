@@ -20,7 +20,7 @@ CORS(app)
 # ======================
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-json_folder = os.path.join(BASE_DIR, "ChatBot", "chatbot_data")
+json_folder = os.path.join(BASE_DIR, "simplebot", "chatbot_data")
 
 all_intents = []
 
