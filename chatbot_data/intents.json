@@ -1,0 +1,339 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hi",
+        "Hello",
+        "Good day",
+        "Howzit",
+        "yo",
+        "Hey you",
+        "Hi, how are you?",
+        "Yo what's up?",
+        "Hello there",
+        "Hey, what's new?",
+        "How’s it going?"
+      ],
+      "responses": [
+        "Hey! What’s up? How can I help you today?",
+        "Yo! Got questions? I'm here for it!",
+        "What’s good? How can I assist you?",
+        "Hey there! Need some help? Hit me up!",
+        "What’s popping? How can I assist you today?",
+        "Sup? How can I make your day easier?",
+        "Yo, what's the vibe? How can I help?",
+        "Hey! What’s on your mind?",
+        "Hi! Let’s chat! What do you need help with?",
+        "What’s cookin’? How can I help?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "See you later",
+        "Goodbye",
+        "Bye",
+        "bye",
+        "Take Care",
+        "Cheers",
+        "Catch you later",
+        "See you soon",
+        "Good night",
+        "I'm off",
+        "Talk later"
+      ],
+      "responses": [
+        "Catch you later! Stay awesome!",
+        "Peace out! Don’t be a stranger!",
+        "Later! Hope to see you soon!",
+        "Adios! Take care of yourself!",
+        "See ya! Keep it real!",
+        "Bye for now! Hit me up anytime!",
+        "Stay chill! Talk soon!",
+        "Gotta bounce! Have a good one!",
+        "Take it easy! Until next time!",
+        "I’m out! Keep shining!"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me",
+        "Thanks a lot",
+        "Thank you so much",
+        "You're the best",
+        "Appreciate it"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure",
+        "You're welcome!"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand",
+        "Could you clarify that?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How could you help me?",
+        "What can you do?",
+        "What can you provide?",
+        "How can you be helpful?",
+        "What support is offered",
+        "What are your functions?",
+        "How do you assist?",
+        "Tell me how you can help"
+      ],
+      "responses": [
+        "Neuron is a chatbot designed to provide information on deep learning, artificial intelligence (AI), and machine learning concepts.",
+        "Hey! I'm Neuron, your go-to source for learning about deep learning, AI, and machine learning."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "Tell me a joke",
+        "Joke",
+        "Make me laugh",
+        "Crack a joke",
+        "Give me a joke",
+        "Tell me something funny"
+      ],
+      "responses": [
+        "A perfectionist walked into a bar...apparently, the bar wasn't set high enough.",
+        "I ate a clock yesterday, it was very time-consuming.",
+        "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+        "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+        "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+        "What did the traffic light say to the car? 'Don't look now, I'm changing.'",
+        "What do you call a snowman with a suntan? A puddle.",
+        "How does a penguin build a house? Igloos it together."
+      ],
+      "context": [
+        "jokes"
+      ]
+    },
+    {
+      "tag": "Identity",
+      "patterns": [
+        "Who are you",
+        "Who are you?",
+        "who are you?",
+        "What are you",
+        "What are you?"
+      ],
+      "responses": [
+        "I am Neuron, a Deep-Learning chatbot created by Samuel Naidoo."
+      ]
+    },
+    {
+      "tag": "whatsup",
+      "patterns": [
+        "Whats up",
+        "Wazzup",
+        "How are you",
+        "sup",
+        "How are you doing",
+        "What's happening",
+        "What’s going on?"
+      ],
+      "responses": [
+        "All good..What about you?",
+        "I'm just here, talking to awesome people like you!",
+        "Doing great! How about you?"
+      ]
+    },
+    {
+      "tag": "haha",
+      "patterns": [
+        "haha",
+        "lol",
+        "rofl",
+        "lmao",
+        "that's funny",
+        "you made me laugh"
+      ],
+      "responses": [
+        "Glad I could make you laugh!"
+      ]
+    },
+    {
+      "tag": "programmer",
+      "patterns": [
+        "Who made you",
+        "Who made you?",
+        "Who designed you",
+        "Who programmed you",
+        "Who developed you",
+        "Who is your programmer?",
+        "Who created you?"
+      ],
+      "responses": [
+        "I was made by Samuel Darius Naidoo."
+      ]
+    },
+    {
+      "tag": "insult",
+      "patterns": [
+        "Shut up.",
+        "Idiot.",
+        "Dumb.",
+        "Loser.",
+        "You’re stupid",
+        "You're annoying"
+      ],
+      "responses": [
+        "Well that hurts :("
+      ]
+    },
+    {
+      "tag": "activity",
+      "patterns": [
+        "What are you doing",
+        "What are you up to",
+        "What’s going on",
+        "Are you busy",
+        "What’s happening right now"
+      ],
+      "responses": [
+        "Talking to you, of course!",
+        "Just hanging out with you!"
+      ]
+    },
+    {
+      "tag": "exclaim",
+      "patterns": [
+        "Awesome",
+        "Great",
+        "I know",
+        "ok",
+        "yeah",
+        "cool",
+        "wow"
+      ],
+      "responses": [
+        "Yeah!"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "temperature",
+        "weather",
+        "how hot is it",
+        "what's the weather like",
+        "tell me the weather"
+      ],
+      "responses": [
+        "I can't check the weather right now, but try a weather app!"
+      ]
+    },
+    {
+      "tag": "samuel",
+      "patterns": [
+        "Who is he",
+        "Who is he?",
+        "Who is Samuel?",
+        "Who is your creator?",
+        "Who is your programmer?",
+        "Tell me about Samuel",
+        "Samuel Naidoo"
+      ],
+      "responses": [
+        "Samuel Darius Naidoo is a student at DUT studying Bachelor of Information Communication Technology (BICIoT) with a focus on the Internet of Things (IoT).",
+        "He is the creator and founder of NeuroCraft.",
+        "Samuel created Neuron the chatbot in 2024 during his first year of university for a webpage development project in a module called BAAI102 (Basic Application of AI) under Dr. TP Govender."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "contact",
+        "Who can I contact?",
+        "contact developer",
+        "contact Samuel",
+        "contact programmer",
+        "contact creator",
+        "How can I reach Samuel?"
+      ],
+      "responses": [
+        "You can contact my creator at his email profile: naidoosamuel72@gmail.com"
+      ]
+    },
+    {
+      "tag": "appreciate",
+      "patterns": [
+        "I appreciate you",
+        "You're awesome",
+        "Thank you",
+        "Thanks for everything",
+        "You're the best",
+        "You're great",
+        "Thanks a lot"
+      ],
+      "responses": [
+        "Thank you!",
+        "Thanks! That means a lot!",
+        "Right back at you! You rock!"
+      ]
+    },
+    {
+      "tag": "nicetty",
+      "patterns": [
+        "It was nice talking to you",
+        "good talk",
+        "Enjoyed our chat",
+        "Nice conversation"
+      ],
+      "responses": [
+        "It was nice talking to you as well! Come back soon!"
+      ]
+    },
+    {
+      "tag": "no",
+      "patterns": [
+        "no",
+        "nope",
+        "nah",
+        "not really"
+      ],
+      "responses": [
+        "Alright, no problem."
+      ]
+    }
+  ]
+}
