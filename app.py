@@ -20,19 +20,48 @@ CORS(app)
 # ======================
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-json_folder = os.path.join(BASE_DIR, "simplebot", "chatbot_data")
+
+# Try both possible folder names (SAFE FOR LOCAL + RENDER)
+possible_paths = [
+    os.path.join(BASE_DIR, "chatbot_data"),
+    os.path.join(BASE_DIR, "simplebot", "chatbot_data"),
+]
+
+json_folder = None
+
+for path in possible_paths:
+    if os.path.exists(path):
+        json_folder = path
+        break
 
 all_intents = []
 
-if os.path.exists(json_folder):
+if json_folder:
+    print("📁 Using folder:", json_folder)
+
     for file in os.listdir(json_folder):
         if file.endswith(".json"):
-            with open(os.path.join(json_folder, file), "r", encoding="utf-8") as f:
-                data = json.load(f)
-                if "intents" in data:
-                    all_intents.extend(data["intents"])
+            file_path = os.path.join(json_folder, file)
+
+            try:
+                with open(file_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+
+                    intents = data.get("intents", [])
+
+                    if isinstance(intents, list):
+                        all_intents.extend(intents)
+
+            except Exception as e:
+                print("❌ Error loading:", file, e)
+
+else:
+    print("❌ chatbot_data folder NOT FOUND")
 
 print("TOTAL INTENTS:", len(all_intents))
+
+if len(all_intents) == 0:
+    raise Exception("No intents loaded → check folder structure or JSON format")
 
 # ======================
 # CLEANER
